@@ -20,7 +20,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
+      { rel: 'icon', type: 'image/x-icon', href: '/icon.ico' }
     ],
     script: [
       { src: "https://api.map.baidu.com/api?v=2.0&ak=m7Lfcq4GD9za2531Cw2GumDZFcbDoZ5H" },
