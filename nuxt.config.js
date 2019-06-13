@@ -13,7 +13,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: '一览群智|elensdata - 专注人工智能大数据研究与应用，让每个客户拥有自己的AI大脑',
+    title: 'Soda',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -38,13 +38,6 @@ module.exports = {
   */
   css: [
     '~assets/styles/reset.css',
-    '~assets/styles/border.css',
-    '~assets/styles/index.css',
-    '~assets/styles/iconfont.css',
-    '~assets/styles/solution_product.css',
-    '~assets/styles/button_style.css',
-    '~assets/styles/h5/common.less',
-    { src: "swiper/dist/css/swiper.css" },
     'element-ui/lib/theme-chalk/index.css'
   ],
   /*
@@ -52,12 +45,7 @@ module.exports = {
   */
   plugins: [
     '~/plugins/route',
-    { src: '~plugins/iview', ssr: true },
     { src: '~plugins/animate', ssr: false },
-    { src: '~plugins/wow', ssr: false },
-    { src: '~/plugins/swiper.js', ssr: false },
-    /* { src: '~/plugins/getRequest.js', ssr: false },
-    { src: '~/plugins/rem.js', ssr: false }, */
     '@/plugins/element-ui'
   ],
 
