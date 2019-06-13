@@ -6,6 +6,5 @@ cp -r ./dist ./
 rm -rf dist
 git add .
 git commit -a -m 'build: new version'
-npm version minor
 git push origin gh-pages
 git checkout gh-pages-dev
