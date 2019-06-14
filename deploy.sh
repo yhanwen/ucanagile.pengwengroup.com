@@ -1,6 +1,6 @@
 git add .
 git commit -m 'build: commit changed files'
-export CDNBASE="https://yhanwen.github.io/soda/_nuxt/"
+export CDNBASE="_nuxt/"
 npm run generate
 git checkout gh-pages
 cp -r ./dist/ ./
