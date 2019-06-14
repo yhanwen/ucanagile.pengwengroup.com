@@ -38,6 +38,7 @@ module.exports = {
   */
   css: [
     '~assets/styles/reset.css',
+    '~assets/icons/style.css',
     'element-ui/lib/theme-chalk/index.css'
   ],
   /*
@@ -45,6 +46,7 @@ module.exports = {
   */
   plugins: [
     '~/plugins/route',
+    '~/plugins/i18n',
     { src: '~plugins/animate', ssr: false },
     '@/plugins/element-ui'
   ],
