@@ -1,6 +1,7 @@
 <template>
 <div class="home-wrapper">
   <img src="~assets/images/logo.png" alt="" class="logo">
+  <a @click="changeLang" class="change-lang">{{$t('switch_lang')}}</a>
   <div class="intro-text">
     <div class="index-main-title" v-html="$t('index_main_title')"></div>
     <div class="index-main-brief">{{$t('index_main_brief')}}</div>
@@ -24,6 +25,13 @@ export default {
     };
   },
   methods: {
+    changeLang() {
+      if(this.$i18n.locale == 'zh-CN') {
+        this.$i18n.locale = 'en';
+      }else {
+        this.$i18n.locale = 'zh-CN'
+      }
+    }
   },
   components: {
   }
@@ -41,6 +49,19 @@ export default {
   bottom:0;
   background: url('~assets/images/bg.jpg') no-repeat top center;
   background-size: cover;
+  .change-lang {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: @white;
+    opacity: 0.8;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.4s;
+    &:hover {
+      opacity: 1;
+    }
+  }
   .logo {
     position: absolute;
     top: 30px;
