@@ -49,6 +49,9 @@ export default {
   bottom:0;
   background: url('~assets/images/bg.jpg') no-repeat top center;
   background-size: cover;
+  @media screen and (max-width: @h5Wdith) {
+    overflow: auto;
+  }
   .change-lang {
     position: absolute;
     top: 20px;
@@ -61,33 +64,63 @@ export default {
     &:hover {
       opacity: 1;
     }
+    @media screen and (max-width: @h5Wdith) {
+      top: 20px;
+      right: 10px;
+      font-size: 12px;
+      padding: 10px;
+      z-index: 100;
+    }
   }
   .logo {
     position: absolute;
     top: 30px;
     left: 30px;
     width: 160px;
+    @media screen and (max-width: @h5Wdith) {
+      top: 20px;
+      left: 20px;
+      width: 130px;
+    }
   }
   .intro-text {
-    position: absolute;
-    width: 700px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -90%);
-    text-align: center;
     color: @white;
+    text-align: center;
     font-size: 20px;
-    line-height: 1.5;
-    z-index: 20;
+    @media screen and (min-width: @h5Wdith) {
+      position: absolute;
+      width: 700px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -90%);
+      line-height: 1.5;
+      z-index: 20;
+    }
+    @media screen and (max-width: @h5Wdith) {
+      position: relative;
+      margin: 0 auto;
+      padding: 160px 0 20px;
+      width: 90%;
+    }
     .index-main-title {
       font-size: 60px;
       margin-bottom: 30px;
       line-height: 1.2;
+      @media screen and (max-width: @h5Wdith) {
+        font-size: 30px;
+        margin-bottom: 30px;
+        line-height: 1.5;
+      }
     }
     .index-main-brief {
       font-size: 20px;
       margin-bottom: 40px;
       opacity: 0.6;
+      @media screen and (max-width: @h5Wdith) {
+        font-size: 16px;
+        margin-bottom: 30px;
+        line-height: 1.5;
+      }
     }
     .button {
       .btn {
@@ -120,19 +153,44 @@ export default {
             border:solid 1px fadeout(@white, 30);
           }
         }
+        @media screen and (max-width: @h5Wdith) {
+          width: 90%;
+          text-align: center;
+          display: block;
+          margin-bottom: 10px;
+          &.download {
+            display: none;
+          }
+        }
       }
     }
   }
   .screen {
-    z-index: 10;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform:translate(-50%, -45%);
-    width: 1300px;
+    @media screen and (min-width: @h5Wdith) {
+      z-index: 10;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform:translate(-50%, -45%);
+      width: 1300px;
+    }
     img {
       display: block;
       width: 100%;
+    }
+    @media screen and (max-width: @h5Wdith) {
+      position: relative;
+      width: 100%;
+      padding-top: 65%;
+      overflow: hidden;
+      margin-top: 60px;
+      img {
+        position: absolute;
+        top:0;
+        left:50%;
+        transform: translate(-50%, 0);
+        width: 110%;
+      }
     }
   }
 }
