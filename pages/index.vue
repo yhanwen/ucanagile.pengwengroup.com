@@ -6,7 +6,7 @@
     <div class="index-main-title" v-html="$t('index_main_title')"></div>
     <div class="index-main-brief">{{$t('index_main_brief')}}</div>
     <div class="button">
-      <a href="https://github.com/yhanwen/soda/releases/download/v1.1.2/Soda-1.1.2.dmg" download="Soda-1.0.0.dmg" class="download btn"><i class="icon-mac"></i><span v-html="$t('try_it_free')"></span></a>
+      <a href="https://github.com/yhanwen/soda/releases/download/v1.1.2/SODA-1.1.2.dmg" download="SODA-1.0.0.dmg" class="download btn"><i class="icon-mac"></i><span v-html="$t('try_it_free')"></span></a>
       <a href="https://github.com/yhanwen/soda" target="_blank" class="github btn"><i class="icon-github"></i><span v-html="$t('source_code')"></span></a>
     </div>
   </div>
